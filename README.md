@@ -12,22 +12,12 @@ interaction is performed only on the server by using a +page.server.ts file.
 
 ## Dependencies
 - Install [Deno](https://docs.deno.com/runtime/getting_started/installation/)
-- Run
-  ```bash
-  deno install
-  ```
+- In a terminal, run `deno install`
 
 ## Configuration
-The recommended way to configure the API key is to run
-```bash
-cp sample.env .env
-```
-and then edit the API key placeholder in `.env`.
-The environment variable can also be set with
-```bash
-export NORTH_CASE_API_KEY="<YOUR API KEY>"
-```
-anytime prior to starting the server.
+The recommended way to configure the API key is to run `cp sample.env .env`
+and then edit the API key placeholder in `.env`. The environment variable
+ can also be set by running `export NORTH_CASE_API_KEY="<YOUR API KEY>"` anytime prior to starting the server.
 
 ## Run the project
 
