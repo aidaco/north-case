@@ -4,6 +4,58 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" target="/css/satoshi.css" />
+    <style>
+      :root {
+        --nebula: rgb(213, 145, 254);
+        --nebula100: rgb(248, 218, 254);
+        --light: rgb(248, 252, 253);
+        --bruma800: rgb(43, 47, 52);
+        --zenith: rgb(30, 33, 37);
+        --aurora: rgb(0, 255, 209);
+      }
+      body {
+        width: 100dvw;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+        background: var(--zenith);
+        color: var(--light);
+        font: 18px 'Red Hat Mono';
+      }
+
+      input {
+        background: var(--bruma800);
+        color: var(--aurora);
+      }
+
+      button {
+        background: var(--bruma800);
+        color: var(--nebula);
+        border: 1px solid var(--light);
+        border-radius: 3px;
+        font: 18px "Red Hat Mono";
+
+        &:hover {
+          background: var(--nebula);
+          color: var(--bruma800);
+        }
+      }
+
+      h1 {
+        font: 48px "Red Hat Mono";
+      }
+
+      @font-face {
+        font-family: 'Red Hat Mono';
+        src: url("/RedHatMono-VariableFont_wght.ttf")
+      }
+
+      @font-face {
+        font-family: 'Satoshi';
+        src: url("/RedHatMono-VariableFont_wght.ttf")
+      }
+    </style>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

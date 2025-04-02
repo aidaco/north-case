@@ -5,8 +5,9 @@ made as part of the application process to [north.cloud](https://north.cloud).
 
 ## Introduction
 
-The dashboard is implemented using [SvelteKit](https://svelte.dev) with [Deno](https://deno.com) as the runtime.
-In order to protect the upstream API, the API key is stored in an environment variable and the authenticated
+The dashboard is implemented using [SvelteKit](https://svelte.dev) with
+[Deno](https://deno.com) as the runtime. In order to protect the upstream API,
+the API key is stored in an environment variable and the authenticated
 interaction is performed only on the server by using a +page.server.ts file.
 
 ## Run the project

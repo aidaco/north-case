@@ -1,4 +1,4 @@
-type SavingsDashboardData = {
+export type SavingsDashboardData = {
   overview: {
     totalSavings: number;
     currentMonthSavings: number;
