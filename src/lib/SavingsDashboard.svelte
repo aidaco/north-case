@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SavingsDashboardData } from '$lib/northCaseAPI';
+  import type { SavingsDashboardData } from '$lib/types';
   import OverviewCards from './OverviewCards.svelte';
   import SavingsTrendChart from './SavingsTrendChart.svelte';
   import SavingsByCategoryChart from './SavingsByCategoryChart.svelte';

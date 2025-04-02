@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Chart } from "chart.js/auto";
   import type { ChartConfiguration } from 'chart.js/auto';
-  import type { SavingsDashboardData } from '$lib/northCaseAPI';
+  import type { SavingsDashboardData } from '$lib/types';
 
   type CategoryData = SavingsDashboardData["savingsByCategory"];
   let { categoryData }: { categoryData: CategoryData} = $props();

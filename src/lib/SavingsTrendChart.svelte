@@ -2,7 +2,7 @@
   import {Chart} from "chart.js/auto";
   import regression from 'regression';
   import type { ChartConfiguration } from "chart.js/auto";
-  import type { SavingsDashboardData } from "./northCaseAPI";
+  import type { SavingsDashboardData } from "./types";
 
   type TrendData = SavingsDashboardData['savingsTrends']
   let { trendData }: {trendData: TrendData}= $props();

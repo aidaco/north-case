@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SavingsDashboardData } from '$lib/northCaseAPI';
+  import type { SavingsDashboardData } from '$lib/types';
   import { formatCurrency, formatPercentage } from '$lib/formatters';
 
   type OverviewData = SavingsDashboardData['overview']

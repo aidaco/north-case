@@ -1,4 +1,4 @@
-import * as api from "$lib/northCaseAPI";
+import * as api from "$lib/server/northCaseAPI";
 import type { PageServerLoad } from "./$types";
 import { env } from '$env/dynamic/private';
 
