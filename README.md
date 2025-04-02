@@ -10,30 +10,35 @@ The dashboard is implemented using [SvelteKit](https://svelte.dev) with
 the API key is stored in an environment variable and the authenticated
 interaction is performed only on the server by using a +page.server.ts file.
 
-## Dependencies
+## Quickstart
+The recommended way to run the project is with the prebuilt Docker image:
+```bash
+sudo docker run -it 2sday/north-case -e NORTH_CASE_API_KEY=<YOUR API KEY>
+````
+
+
+
+## Installation
 - Install [Deno](https://docs.deno.com/runtime/getting_started/installation/)
 - In a terminal, run `deno install`
-
-## Configuration
-The recommended way to configure the API key is to run `cp sample.env .env`
-and then edit the API key placeholder in `.env`. The environment variable
- can also be set by running `export NORTH_CASE_API_KEY="<YOUR API KEY>"` anytime prior to starting the server.
-
-## Run the project
-
-- Start a development server...
-  ```bash
-  deno task dev
-  ```
-- Create a production build...
-  ```bash
-  deno task build
-  ```
-- Preview a production build...
-  ```bash
-  deno task preview
-  ```
-- Start a production server...
-  ```bash
-  deno run -REN build/index.js
-  ```
+- Configure your API key by running `cp sample.env .env`
+and then editing the API key placeholder in `.env`. The environment variable
+ can also be set by running `export NORTH_CASE_API_KEY="<YOUR API KEY>"`
+or any other method.
+- If you want to...
+  - ... start a development server, run:
+    ```bash
+    deno task dev
+    ```
+  - ... create a production build, run:
+    ```bash
+    deno task build
+    ```
+  - ... preview a production build, run:
+    ```bash
+    deno task preview
+    ```
+  - ... start a production server, run:
+    ```bash
+    deno run -REN build/index.js
+    ```
