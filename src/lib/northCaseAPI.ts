@@ -9,11 +9,23 @@ export type SavingsDashboardData = {
   detailedSavings: { date: string; service: string; amount: number }[];
 };
 
-export async function fetchSavingsDashboardData(): Promise<
+const ENDPOINT_URL = "https://north-case-api.vercel.app/api"
+
+export async function fetchSavingsDashboardData(api_key: string): Promise<
   SavingsDashboardData
 > {
-  return SAMPLE_DATA;
+  let response = await fetch(ENDPOINT_URL, {headers: {"Authorization": api_key}})
+  if (!response.ok) {
+    throw Error(`The upstream API returned an error: ${response.body}`)
+  }
+  return await response.json()
 }
+
+// export async function fetchSavingsDashboardData(api_key: string): Promise<
+//   SavingsDashboardData
+// > {
+//   return SAMPLE_DATA;
+// }
 
 const SAMPLE_DATA: SavingsDashboardData = {
   "overview": {
