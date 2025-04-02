@@ -83,7 +83,7 @@
 <div class="header">
   <h3>Monthy Savings Trend</h3>
   <div>
-    <span class="projection-length"> Project {projectionLength} months</span>
+    <span class="projection-length"> Projected {projectionLength} months</span>
     <button onclick={incrProjectionLength}>+1</button>
     <button onclick={decrProjectionLength}>-1</button>
   </div>

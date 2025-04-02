@@ -12,7 +12,8 @@ the API key is stored in an environment variable and the authenticated
 interaction is performed server-side by using a +page.server.ts file and $lib/server/.
 
 ## Quickstart
-The recommended way to run the project is with the prebuilt Docker image:
+The recommended way to run the project is with the prebuilt Docker image.
+Install [Docker](https://www.docker.com/get-started/), then run the following in a terminal:
 ```bash
 sudo docker run -it -p 3000:3000 -e NORTH_CASE_API_KEY=<YOUR API KEY> 2sday/north-case
 ```
