@@ -14,7 +14,7 @@ interaction is performed server-side by using a +page.server.ts file and $lib/se
 ## Quickstart
 The recommended way to run the project is with the prebuilt Docker image:
 ```bash
-sudo docker run -it 2sday/north-case -e NORTH_CASE_API_KEY=<YOUR API KEY>
+sudo docker run -it -p 3000:3000 -e NORTH_CASE_API_KEY=<YOUR API KEY> 2sday/north-case
 ```
 
 ## Installation
